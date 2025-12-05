@@ -48,8 +48,8 @@ nc 192.168.56.102 23    # Telnet     ��▒�� ��#��'
 ### 🔥 **Service version numbers**
 - vsFTPd 2.3.4
 - OpenSSH 4.7p1  
--These versions will be used later for vulnerability analysis.
--Any unusual or corrupted text (especially on Telnet) can indicate misconfiguration or older services.
+- These versions will be used later for vulnerability analysis.
+- Any unusual or corrupted text (especially on Telnet) can indicate misconfiguration or older services.
 
 
 
