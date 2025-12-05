@@ -34,7 +34,7 @@ nc 192.168.56.102 23    # Telnet
 
 ---
 
-## 📌2. Caputured Banner
+# ## 2. Caputured Banner
 
 ```bash
 nc 192.168.56.102 21    # FTP        220 (vsFTPd 2.3.4)
@@ -43,15 +43,11 @@ nc 192.168.56.102 23    # Telnet     ��▒�� ��#��'
 
 ```
 
-# ## 4. Key Findings
+# ## 3. What to look for
 
-### 🔥 **High‑Risk Services Identified**
-- vsftpd 2.3.4 → Backdoor exploit  
-- UnrealIRCd → Remote command execution  
-- Tomcat 8180 → Weak credentials + WAR deployment  
-- NFS 2049 → Anonymous mounts  
-- Samba 445/139 → SMB exploitation  
-- ProFTPD 2121 → Remote exploit  
+### 🔥 **Service version numbers**
+- vsFTPd 2.3.4
+- OpenSSH 4.7p1  
 
 ### ⚠️ **Weak / Outdated Services**
 - Apache 2.2.8  
