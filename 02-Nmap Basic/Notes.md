@@ -1,4 +1,4 @@
-##02 – Nmap Basic Port Scan (-sV)
+#02 – Nmap Basic Port Scan (-sV)
 
 Tool: Nmap
 Technique: Service & Version Detection
