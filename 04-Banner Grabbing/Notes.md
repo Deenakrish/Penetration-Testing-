@@ -1,5 +1,5 @@
 
-# ##03 – Banner Grabbing (-sV)
+# ##04 – Banner Grabbing
 
 ---
 
@@ -7,7 +7,7 @@
 **Nmap**
 
 ## 🎯 Technique  
-Service & Version Detection
+Banner Grabbing
 
 ## 🖥 Target  
 **192.168.56.102 (Metasploitable 2)**
@@ -45,7 +45,7 @@ nc 192.168.56.102 23    # Telnet     ��▒�� ��#��'
 
 # ## 3. What to look for
 
-### 🔥 **Service version numbers**
+### **Service version numbers**
 - vsFTPd 2.3.4
 - OpenSSH 4.7p1  
 - These versions will be used later for vulnerability analysis.
