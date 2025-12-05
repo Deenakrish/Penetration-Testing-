@@ -133,16 +133,7 @@ HOP  RTT     ADDRESS
 
 ---
 
-# ## 7. What to Screenshot for GitHub
-
-✔ Full Nmap command + output  
-✔ OS detection section  
-✔ Script results (smb, rpc, dns, smtp, etc.)  
-✔ Ports and services table  
-
----
-
-# ## 8. What to Check / Analyze
+# ## 7. What to Check / Analyze
 - OS detection accuracy (Linux 2.6)  
 - Version disclosure → exploitability  
 - Weak encryption (SSLv2, plaintext protocols)  
