@@ -152,15 +152,15 @@ Reconnecting with SMB1 for workgroup listing.
 
 [+] Attempting to map shares on 192.168.56.102
 
-//192.168.56.102/print$ Mapping: DENIED Listing: N/A Writing: N/A
-//192.168.56.102/tmp    Mapping: OK Listing: OK Writing: N/A
-//192.168.56.102/opt    Mapping: DENIED Listing: N/A Writing: N/A
+    //192.168.56.102/print$ Mapping: DENIED Listing: N/A Writing: N/A
+    //192.168.56.102/tmp    Mapping: OK Listing: OK Writing: N/A
+    //192.168.56.102/opt    Mapping: DENIED Listing: N/A Writing: N/A
 
 [E] Can't understand response:
 NT_STATUS_NETWORK_ACCESS_DENIED listing \*
 
-//192.168.56.102/IPC$   Mapping: N/A Listing: N/A Writing: N/A
-//192.168.56.102/ADMIN$ Mapping: DENIED Listing: N/A Writing: N/A
+    //192.168.56.102/IPC$   Mapping: N/A Listing: N/A Writing: N/A
+    //192.168.56.102/ADMIN$ Mapping: DENIED Listing: N/A Writing: N/A
 
 
  ===========================( Password Policy Information for 192.168.56.102 )===========================
