@@ -14,13 +14,12 @@ To identify:
 ## Tests Performed
 | # | Test | Tool | Status |
 |---|------|------|--------|
-| 01 | Network Discovery | netdiscover | ✓ Completed |
-| 02 | Basic Port Scan | nmap | ✓ Completed |
-| 03 | Aggressive Scan | nmap -A | ✓ Completed |
-| 04 | Banner Grabbing | netcat | ✓ Completed |
-| 05 | Web Scan | nikto | ✓ Completed |
-| 06 | SMB Enumeration | enum4linux | ✓ Completed |
-| 07 | Vuln Script Scan | nmap --script vuln | ✓ Completed |
+| 01 | Service Detection Scan | nmap -sV | ✓ Completed |
+| 02 | Aggressive Scan | nmap -A | ✓ Completed |
+| 03 | Banner Grabbing | netcat | ✓ Completed |
+| 04 | Web Scan | nikto | ✓ Completed |
+| 05 | SMB Enumeration | enum4linux | ✓ Completed |
+| 06 | Vuln Script Scan | nmap --script vuln | ✓ Completed |
 
 Each test has its own folder with:
 - Notes
