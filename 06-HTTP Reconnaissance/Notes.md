@@ -55,3 +55,20 @@ HTTP enumeration & vulnerability detection on port **80**.
 + End Time:           2025-12-05 22:17:03 (GMT5.5) (17 seconds)
 ---------------------------------------------------------------------------
 + 1 host(s) tested
+
+# ## 6. Key Findings
+
+### 🔥 High-Risk Vulnerabilities
+- **phpinfo.php exposed** → reveals system internals
+- **phpMyAdmin directory exposed** → critical attack surface 
+- **wp-config.php backup file found** → contains credentials
+- **HTTP TRACE enabled** → vulnerable to Cross-Site Tracing (XST)
+- **Directory indexing enabled** → in /doc/, /icons/, /test/
+
+### ⚠️ Outdated Software
+- **Apache 2.2.8** → extremely outdated, EOL
+- **PHP 5.2.4** → end-of-life, vulnerable
+
+### 🟡 Missing Security Headers
+- **X-Frame-Options** → Clickjacking protection  
+- **X-Content-Type-Options** → MIME-type sniffing prevention 
