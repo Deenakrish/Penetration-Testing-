@@ -4,7 +4,7 @@
 ---
 
 ## 🛠 Tool  
-**Nmap**
+**Nmap-Network Discovery Tool**
 
 ## 🎯 Technique  
 Aggressive Scan (Version Detection + OS Detection + Script Scan)
