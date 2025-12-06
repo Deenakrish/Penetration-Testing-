@@ -272,3 +272,35 @@ No printers returned.
 
 
 enum4linux complete on Fri Dec  5 22:39:54 2025
+
+# ## 4. Key Findings
+
+### ✔ Anonymous Login
+- Anonymous Authentication Allowed
+- Enables Access to user lists & shares 
+
+### ✔ Users
+- Multiple System Users Exposed  
+- Important Accounts:
+     - root
+     - msfadmin
+     - postgres
+     - www-data
+     - ftp
+     - tomcat55
+
+### ✔ Shares
+- SSLv2 enabled → **very weak**  
+- Certificate expired (2010)  
+- Common in old systems
+
+### ✔ Password Policy
+- Minimum password length: 5
+- Password complexity: Disabled
+- Maximum password age: Not Set
+- Lockout threshold: None
+
+### ✔ I Risk
+- Weak SMB configuration + anonymous login = high vulnerability surface.
+
+---
