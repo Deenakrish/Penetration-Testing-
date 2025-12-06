@@ -6,7 +6,7 @@
 **enum4linux – Comprehensive SMB enumeration tool for Linux.**
 
 ## 🎯 Technique  
-SMB Enumeration
+SMB Enumeration & Recon
 
 ## 🖥 Target  
 **192.168.56.102 (Metasploitable 2)**
