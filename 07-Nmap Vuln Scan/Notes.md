@@ -15,17 +15,17 @@ SMB Enumeration & Recon
 ## 📌 Command Used 
     sudo nmap --script vuln 192.168.56.102
 
-[sudo] password for lucifer:
-Starting Nmap 7.95 ( https://nmap.org ) at 2025-12-05 22:22 IST
-Nmap scan report for 192.168.56.102
-Host is up (0.00016s latency).
-Not shown: 977 closed tcp ports (reset)
+- Starting Nmap 7.95 ( https://nmap.org ) at 2025-12-05 22:22 IST
+- Nmap scan report for 192.168.56.102
+- Host is up (0.00016s latency).
+- Not shown: 977 closed tcp ports (reset)
 
-PORT     STATE SERVICE
-21/tcp   open  ftp
-| ftp-vsftpd-backdoor:
-|   VULNERABLE:
-|   vsFTPd version 2.3.4 backdoor
+    PORT     STATE SERVICE
+    21/tcp   open  ftp
+
+- | ftp-vsftpd-backdoor:
+- |   VULNERABLE:
+- |   vsFTPd version 2.3.4 backdoor
 |   State: VULNERABLE (Exploitable)
 |   IDs: BID:48539 CVE:CVE-2011-2523
 |   vsFTPd version 2.3.4 backdoor, reported on 2011-07-04.
@@ -39,9 +39,9 @@ PORT     STATE SERVICE
 |     http://scarybeastsecurity.blogspot.com/2011/07/alert-vsftpd-download-backdoored.html
 |     https://github.com/rapid7/metasploit-framework/blob/master/modules/exploits/unix/ftp/vsftpd_234_backdoor.rb
 
-22/tcp   open  ssh
-23/tcp   open  telnet
-25/tcp   open  smtp
+      22/tcp   open  ssh
+      23/tcp   open  telnet
+      25/tcp   open  smtp
 |_sslv2-drown: ERROR: Script execution failed (use -d to debug)
 
 | ssl-dh-params:
@@ -93,8 +93,8 @@ PORT     STATE SERVICE
 |     https://www.openssl.org/~bodo/ssl-poodle.pdf
 |     https://www.imperialviolet.org/2014/10/14/poodle.html
 
-53/tcp   open  domain
-80/tcp   open  http
+    53/tcp   open  domain
+    80/tcp   open  http
 |_http-trace: TRACE is enabled
 
 | http-sql-injection:
