@@ -4,7 +4,7 @@
 ---
 
 ## 🛠 Tool  
-**Netcat.**
+**Netcat(Nc)-> A widely-used manual reconnaissance tool for banner grabbing.**
 
 ## 🎯 Technique  
 **Service Banner Enumeration-> Used to collect service versions directly from open ports.**
