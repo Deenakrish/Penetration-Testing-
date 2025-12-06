@@ -1,9 +1,9 @@
-# ##02 – Nmap Basic Port Scan (-sV)
+# ##01 – Nmap Service Detection Scan (-sV)
 
 ---
 
 ## 🛠 Tool  
-**Nmap**
+**Nmap-Network Discovry Tool**
 
 ## 🎯 Technique  
 Service & Version Detection
