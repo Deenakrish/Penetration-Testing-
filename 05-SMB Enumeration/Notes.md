@@ -290,9 +290,14 @@ enum4linux complete on Fri Dec  5 22:39:54 2025
      - tomcat55
 
 ### ✔ Shares
-- SSLv2 enabled → **very weak**  
-- Certificate expired (2010)  
-- Common in old systems
+| Shares | Status | 
+|------|---------|
+| tmp | Mapped + Listing allowed | 
+| print5 | Access denied | 
+| opt | Access denied | 
+| IPC$| N/A | 
+| ADMIN$ | Denied |  
+
 
 ### ✔ Password Policy
 - Minimum password length: 5
