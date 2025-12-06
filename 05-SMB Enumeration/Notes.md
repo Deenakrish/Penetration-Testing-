@@ -18,13 +18,13 @@ Starting enum4linux v0.9.1 ( http://labs.portcullis.co.uk/application/enum4linux
  ===============================( Nbtstat Information for 192.168.56.102 )===============================
 
 Looking up status of 192.168.56.102
-        METASPLOITABLE  <00> -         B <ACTIVE>  Workstation Service
-        METASPLOITABLE  <03> -         B <ACTIVE>  Messenger Service
-        METASPLOITABLE  <20> -         B <ACTIVE>  File Server Service
-        ..__MSBROWSE__. <01> - <GROUP> B <ACTIVE>  Master Browser
-        WORKGROUP       <00> - <GROUP> B <ACTIVE>  Domain/Workgroup Name
-        WORKGROUP       <1d> -         B <ACTIVE>  Master Browser
-        WORKGROUP       <1e> - <GROUP> B <ACTIVE>  Browser Service Elections
+       - METASPLOITABLE  <00> -         B <ACTIVE>  Workstation Service
+       - METASPLOITABLE  <03> -         B <ACTIVE>  Messenger Service
+       - METASPLOITABLE  <20> -         B <ACTIVE>  File Server Service
+       - ..__MSBROWSE__. <01> - <GROUP> B <ACTIVE>  Master Browser
+       - WORKGROUP       <00> - <GROUP> B <ACTIVE>  Domain/Workgroup Name
+       - WORKGROUP       <1d> -         B <ACTIVE>  Master Browser
+       - WORKGROUP       <1e> - <GROUP> B <ACTIVE>  Browser Service Elections
 
         MAC Address = 00-00-00-00-00-00
 
