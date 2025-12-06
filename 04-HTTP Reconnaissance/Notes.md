@@ -1,5 +1,5 @@
 
-# ## 05 – HTTP Reconnaissance (Nikto Scan)
+# ## 04 – HTTP Reconnaissance (Nikto Scan)
 
 ---
 
@@ -16,6 +16,7 @@ HTTP enumeration & vulnerability detection on port **80**.
 
     nikto -h http://192.168.56.102
 
+## 🖥 Output  
 
 - Nikto v2.5.0
 ---------------------------------------------------------------------------
@@ -56,7 +57,7 @@ HTTP enumeration & vulnerability detection on port **80**.
 ---------------------------------------------------------------------------
 + 1 host(s) tested
 
-# ## 6. Key Findings
+# ## Key Findings
 
 ### 🔥 High-Risk Vulnerabilities
 - **phpinfo.php exposed** → reveals system internals
