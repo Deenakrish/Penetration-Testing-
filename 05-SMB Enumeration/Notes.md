@@ -14,6 +14,8 @@ SMB Enumeration & Recon
 ## 📌 Command Used
     
     enum4linux -a 192.168.56.102 
+    
+## 🖥 Output  
 
 Starting enum4linux v0.9.1 ( http://labs.portcullis.co.uk/application/enum4linux/ ) on Fri Dec  5 22:39:43 2025
 
@@ -273,7 +275,7 @@ No printers returned.
 
 enum4linux complete on Fri Dec  5 22:39:54 2025
 
-# ## 4. Key Findings
+# ## Key Findings
 
 ### ✔ Anonymous Login
 - Anonymous Authentication Allowed
