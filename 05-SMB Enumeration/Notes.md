@@ -3,11 +3,11 @@ Starting enum4linux v0.9.1 ( http://labs.portcullis.co.uk/application/enum4linux
 
  =========================================( Target Information )=========================================
 
-Target ........... 192.168.56.102
-RID Range ........ 500-550,1000-1050
-Username ......... ''
-Password ......... ''
-Known Usernames .. administrator, guest, krbtgt, domain admins, root, bin, none
+- Target ........... 192.168.56.102
+- RID Range ........ 500-550,1000-1050
+- Username ......... ''
+- Password ......... ''
+- Known Usernames .. administrator, guest, krbtgt, domain admins, root, bin, none
 
 
  ===========================( Enumerating Workgroup/Domain on 192.168.56.102 )===========================
