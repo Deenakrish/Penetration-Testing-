@@ -48,7 +48,8 @@ Looking up status of 192.168.56.102 :
 [E] Can't get OS info with smbclient
 
 [+] Got OS info for 192.168.56.102 from srvinfo: 
-       - METASPLOITABLE Wk Sv PrQ Unx NT SNT metasploitable server (Samba 3.0.20-Debian)
+     
+        - METASPLOITABLE Wk Sv PrQ Unx NT SNT metasploitable server (Samba 3.0.20-Debian)
        - platform_id     :       500
        - os version      :       4.9
        - server type     :       0x9a03
@@ -62,7 +63,7 @@ Looking up status of 192.168.56.102 :
 - index: 0x4 RID: 0x402 acb: 0x00000011 Account: proxy    Name: proxy     Desc: (null)
 - index: 0x5 RID: 0x4b4 acb: 0x00000011 Account: syslog   Name: (null)    Desc: (null)
 - index: 0x6 RID: 0xbba acb: 0x00000010 Account: user     Name: just a user,111,, Desc: (null)
--index: 0x7 RID: 0x42a acb: 0x00000011 Account: www-data Name: www-data  Desc: (null)
+- index: 0x7 RID: 0x42a acb: 0x00000011 Account: www-data Name: www-data  Desc: (null)
 - index: 0x8 RID: 0x3e8 acb: 0x00000011 Account: root     Name: root      Desc: (null)
 - index: 0x9 RID: 0x3fa acb: 0x00000011 Account: news     Name: news      Desc: (null)
 - index: 0xa RID: 0x4c0 acb: 0x00000011 Account: postgres Name: PostgreSQL administrator,,, Desc: (null)
@@ -92,41 +93,41 @@ Looking up status of 192.168.56.102 :
 - index: 0x22 RID: 0x3f0 acb: 0x00000011 Account: sync    Name: sync      Desc: (null)
 - index: 0x23 RID: 0x3fc acb: 0x00000011 Account: uucp    Name: uucp      Desc: (null)
 
-user:[games] rid:[0x3f2]
-user:[nobody] rid:[0x1f5]
-user:[bind] rid:[0x4ba]
-user:[proxy] rid:[0x402]
-user:[syslog] rid:[0x4b4]
-user:[user] rid:[0xbba]
-user:[www-data] rid:[0x42a]
-user:[root] rid:[0x3e8]
-user:[news] rid:[0x3fa]
-user:[postgres] rid:[0x4c0]
-user:[bin] rid:[0x3ec]
-user:[mail] rid:[0x3f8]
-user:[distccd] rid:[0x4c6]
-user:[proftpd] rid:[0x4ca]
-user:[dhcp] rid:[0x4b2]
-user:[daemon] rid:[0x3ea]
-user:[sshd] rid:[0x4b8]
-user:[man] rid:[0x3f4]
-user:[lp] rid:[0x3f6]
-user:[mysql] rid:[0x4c2]
-user:[gnats] rid:[0x43a]
-user:[libuuid] rid:[0x4b0]
-user:[backup] rid:[0x42c]
-user:[msfadmin] rid:[0xbb8]
-user:[telnetd] rid:[0x4c8]
-user:[sys] rid:[0x3ee]
-user:[klog] rid:[0x4b6]
-user:[postfix] rid:[0x4bc]
-user:[service] rid:[0xbbc]
-user:[list] rid:[0x434]
-user:[irc] rid:[0x436]
-user:[ftp] rid:[0x4be]
-user:[tomcat55] rid:[0x4c4]
-user:[sync] rid:[0x3f0]
-user:[uucp] rid:[0x3fc]
+- user:[games] rid:[0x3f2]
+- user:[nobody] rid:[0x1f5]
+- user:[bind] rid:[0x4ba]
+- user:[proxy] rid:[0x402]
+- user:[syslog] rid:[0x4b4]
+- user:[user] rid:[0xbba]
+- user:[www-data] rid:[0x42a]
+- user:[root] rid:[0x3e8]
+- user:[news] rid:[0x3fa]
+- user:[postgres] rid:[0x4c0]
+- user:[bin] rid:[0x3ec]
+- user:[mail] rid:[0x3f8]
+- user:[distccd] rid:[0x4c6]
+- user:[proftpd] rid:[0x4ca]
+- user:[dhcp] rid:[0x4b2]
+- user:[daemon] rid:[0x3ea]
+- user:[sshd] rid:[0x4b8]
+- user:[man] rid:[0x3f4]
+- user:[lp] rid:[0x3f6]
+- user:[mysql] rid:[0x4c2]
+- user:[gnats] rid:[0x43a]
+- user:[libuuid] rid:[0x4b0]
+- user:[backup] rid:[0x42c]
+- user:[msfadmin] rid:[0xbb8]
+- user:[telnetd] rid:[0x4c8]
+- user:[sys] rid:[0x3ee]
+- user:[klog] rid:[0x4b6]
+- user:[postfix] rid:[0x4bc]
+- user:[service] rid:[0xbbc]
+- user:[list] rid:[0x434]
+- user:[irc] rid:[0x436]
+- user:[ftp] rid:[0x4be]
+- user:[tomcat55] rid:[0x4c4]
+- user:[sync] rid:[0x3f0]
+- user:[uucp] rid:[0x3fc]
 
 
  ================================( Share Enumeration on 192.168.56.102 )================================
