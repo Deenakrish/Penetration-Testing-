@@ -103,3 +103,59 @@ SMB Enumeration & Recon
 - |     http://192.168.56.102:80/mutillidae/index.php?page=set-background-color.php' OR sqlspider
 - |     http://192.168.56.102:80/mutillidae/index.php?page=view-someones-blog.php' OR sqlspider
 - |     (many other similar URLs detected)
+
+# ## 4. Open Ports And Services
+
+- 21/tcp – FTP
+   - Service: vsFTPd 2.3.4
+   - Vulnerability: vsFTPd backdoor
+       - Exploitable (allows remote shell access)
+       - Reference: CVE-2011-2523
+       - Exploit result: uid=0(root) gid=0(root) (indicates root shell access possible)
+- 22/tcp – SSH
+- 23/tcp – Telnet
+- 25/tcp – SMTP
+    - Some TLS vulnerabilities detected (DROWN, weak Diffie-Hellman)
+- 53/tcp – DNS
+- 80/tcp – HTTP
+    - Several web vulnerabilities detected:
+         - TRACE enabled (http-trace)
+         -  Multiple potential SQL injection points (http-sql-injection) on Mutillidae pages
+         -  Multiple arbitrary file inclusion vectors (arbitrary-file-inclusion.php)
+
+# ## 4. Critical Vulnerabilities Detected
+
+- vsFTPd 2.3.4 backdoor
+   - Critical because it allows remote root access.
+   - Exploitable via the vsFTPd backdoor exploit.
+- TLS/SSL vulnerabilities
+   - DROWN / SSLv2: Can allow decryption of TLS sessions.
+   - Weak DH groups / Logjam: Man-in-the-middle attack possible, weak cryptography.
+   - POODLE (SSL 3.0): Padding oracle vulnerability, allows potential decryption of sensitive data.
+- Web vulnerabilities on HTTP (Mutillidae)
+   - SQL Injection: Multiple potential injection points.
+   - Arbitrary File Inclusion: Could allow remote code execution.
+   - HTTP TRACE enabled: Potentially allows Cross-Site Tracing attacks.
+
+---
+# ## 5. Observations
+
+- The system is intentionally vulnerable (probably a vulnerable lab setup, like Mutillidae or Metasploitable VM).
+- The vsFTPd 2.3.4 backdoor is extremely high-risk.
+- TLS vulnerabilities indicate weak or outdated cryptography.
+- Web vulnerabilities (SQLi, arbitrary file inclusion) suggest the web app is not properly secured.
+
+---
+# ## 6. Next Steps / Recommendations
+
+- High-Risk Issues (Immediate attention)
+   - vsFTPd backdoor: disable/remove vsFTPd 2.3.4, upgrade to a secure version.
+   - SSL/TLS: disable SSLv2/SSLv3, enforce strong DH groups, and update OpenSSL.
+- Web Vulnerabilities
+   - Test SQLi points in a safe, lab environment.
+   - Review web app code for input sanitization (Mutillidae is intentionally vulnerable, so these are expected in the lab).
+- Lab Context
+   - If this is for training (Metasploitable/Mutillidae), your findings are normal.
+   - If this is a production system, all detected vulnerabilities are critical and must be remediated.
+
+---
