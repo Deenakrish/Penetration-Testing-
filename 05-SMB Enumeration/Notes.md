@@ -1,3 +1,19 @@
+# ##05 – SMB Enumeration 
+
+---
+
+## 🛠 Tool  
+**enum4linux – Comprehensive SMB enumeration tool for Linux.**
+
+## 🎯 Technique  
+SMB Enumeration
+
+## 🖥 Target  
+**192.168.56.102 (Metasploitable 2)**
+
+## 📌 Command Used
+    
+    enum4linux -a 192.168.56.102 
 
 Starting enum4linux v0.9.1 ( http://labs.portcullis.co.uk/application/enum4linux/ ) on Fri Dec  5 22:39:43 2025
 
