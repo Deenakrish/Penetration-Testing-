@@ -194,8 +194,9 @@ NT_STATUS_NETWORK_ACCESS_DENIED listing \*
         [+] Forced Log off Time: Not Set
 
 [+] Retrieved partial password policy with rpcclient:
-Password Complexity: Disabled
-Minimum Password Length: 0
+
+- Password Complexity: Disabled
+- Minimum Password Length: 0
 
 
  ======================================( Groups on 192.168.56.102 )=====================================
