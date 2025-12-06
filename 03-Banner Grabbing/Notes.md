@@ -1,13 +1,13 @@
 
-# ##04 – Banner Grabbing
+# ##03 – Banner Grabbing
 
 ---
 
 ## 🛠 Tool  
-**Nmap**
+**Netcat.**
 
 ## 🎯 Technique  
-Banner Grabbing
+**Service Banner Enumeration-> Used to collect service versions directly from open ports.**
 
 ## 🖥 Target  
 **192.168.56.102 (Metasploitable 2)**
