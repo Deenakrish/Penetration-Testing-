@@ -1,19 +1,21 @@
 
-# ##05 – Nmap Vuln Scan
+# ##06 – Nmap Script Scan
 
 ---
 
 ## 🛠 Tool  
-**Nmap.**
+**Nmap-Network Discovery Tool.**
 
 ## 🎯 Technique  
-SMB Enumeration & Recon
+Default & Custom Script Scan (Nmap Scripting Engine)
 
 ## 🖥 Target  
 **192.168.56.102 (Metasploitable 2)**
 
 ## 📌 Command Used 
     sudo nmap --script vuln 192.168.56.102
+
+## 🖥 Output  
 
 - Starting Nmap 7.95 ( https://nmap.org ) at 2025-12-05 22:22 IST
 - Nmap scan report for 192.168.56.102
@@ -104,7 +106,7 @@ SMB Enumeration & Recon
 - |     http://192.168.56.102:80/mutillidae/index.php?page=view-someones-blog.php' OR sqlspider
 - |     (many other similar URLs detected)
 
-# ## 4. Open Ports And Services
+# ## 1. Open Ports And Services
 
 - 21/tcp – FTP
    - Service: vsFTPd 2.3.4
@@ -123,7 +125,7 @@ SMB Enumeration & Recon
          -  Multiple potential SQL injection points (http-sql-injection) on Mutillidae pages
          -  Multiple arbitrary file inclusion vectors (arbitrary-file-inclusion.php)
 
-# ## 4. Critical Vulnerabilities Detected
+# ## 2. Critical Vulnerabilities Detected
 
 - vsFTPd 2.3.4 backdoor
    - Critical because it allows remote root access.
@@ -138,7 +140,7 @@ SMB Enumeration & Recon
    - HTTP TRACE enabled: Potentially allows Cross-Site Tracing attacks.
 
 ---
-# ## 5. Observations
+# ## 3. Observations
 
 - The system is intentionally vulnerable (probably a vulnerable lab setup, like Mutillidae or Metasploitable VM).
 - The vsFTPd 2.3.4 backdoor is extremely high-risk.
@@ -146,7 +148,7 @@ SMB Enumeration & Recon
 - Web vulnerabilities (SQLi, arbitrary file inclusion) suggest the web app is not properly secured.
 
 ---
-# ## 6. Next Steps / Recommendations
+# ## 4. Next Steps / Recommendations
 
 - High-Risk Issues (Immediate attention)
    - vsFTPd backdoor: disable/remove vsFTPd 2.3.4, upgrade to a secure version.
