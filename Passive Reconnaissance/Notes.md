@@ -178,6 +178,22 @@ This ensures:
 
 ## 📌 Summary – Passive Reconnaissance Findings
 
+| Step | Tool  | Result | Status |
+|---|------|------|--------|
+| WHOIS | WHOIS | Confirmed RFC1918 Private IP | ✓ Expected |
+| Reverse DNS | Nslookup | No DNS name found | ✓ Normal |
+| Reverse DNS (dig) | dig -x | No PTR record | ✓ Normal |
+| Target Info | Google | Identified default services & architecture | 📌 Informational |
+
+---
+
+## ✅ Interpretation (Overall)
+
+- Target is a private, isolated system
+- No DNS records exist → good OPSEC
+- Services are designed to be exploited later
+- Safe to continue to Phase 3: Active Reconnaissance
+
 
 
 
