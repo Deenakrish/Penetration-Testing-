@@ -98,35 +98,86 @@ It automatically runs several outdated, misconfigured, and vulnerable services.
 
 ## Key Default Services
 
-- 1. FTP – vsftpd 2.3.4
+-  FTP – vsftpd 2.3.4
      - Contains a backdoor vulnerability
      - Allows remote code execution
-- 2. SSH – OpenSSH 4.7p1
+-  SSH – OpenSSH 4.7p1
      - Outdated and vulnerable
      - Useful for brute-force or exploit practice
-- 3. Telnet
+-  Telnet
      - Enabled by default
      - Sends credentials in plaintext
-- 4. Samba (SMB) – Samba 3.0.20
+-  Samba (SMB) – Samba 3.0.20
      - Misconfigured anonymous shares
      - Vulnerable to usermap_script exploit
-- 5. HTTP – Apache 2.2.8
+-  HTTP – Apache 2.2.8
   Hosts several intentionally vulnerable web apps:
      - Damn Vulnerable Web Application (DVWA)
      - Mutillidae
      - phpMyAdmin
      - Tiki Wiki CMS
-- 6. Databases
+-  Databases
      - PostgreSQL (default creds: postgres:postgres)
      - MySQL (root user with empty password)
-- 7. VNC
+-  VNC
      - Weak password: password
-- 8. IRC – UnrealIRCd 3.2.8.1
+-  IRC – UnrealIRCd 3.2.8.1
      - Contains a known backdoor
      - Contains a known backdoor
-- 9. DistCC Service
+-  DistCC Service
       - Remote command execution vulnerability
 ---
+
+## 🏗 Metasploitable 2 Architecture (Summary)
+
+Metasploitable 2 is a 32-bit Linux virtual machine loaded with insecure services.
+It is NOT a framework but a purposely weak operating system.
+
+---
+## 🔨 Architecture Components
+
+1. Vulnerable Network Services
+
+These provide remote entry points:
+   - FTP()
+   - SSH
+   - Telnet
+   - SMB/Samba
+   - Databases
+   - IRC
+   - DistCC
+   - HTTP Web pages
+
+2. Vulnerable Web Applications
+
+Includes:
+   - DVWA
+   - Mutillidae
+   - phpMyAdmin
+   - Tiki Wiki
+   - Other misc vulnerable sites
+
+2. 3. Weak System Configuration
+   - Default passwords (e.g., msfadmin:msfadmin)
+   - Misconfigured permissions
+   - Outdated kernels & packages
+
+## 🖧 Deployment Architecture
+
+Metasploitable 2 is typically used in an isolated penetration testing lab:
+  - Running on VirtualBox / VMware
+  - Kali Linux as attacker
+  - Metasploitable 2 as the target
+  - Connected through Host-Only or NAT Network
+
+This ensures:
+  - Safety
+  - Isolation
+  - No Internet Connection
+---
+
+## 📌 Summary – Passive Reconnaissance Findings
+
 
 
 
