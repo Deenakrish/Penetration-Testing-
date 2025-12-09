@@ -62,4 +62,39 @@ _____________________________________________________________________________
 
 Three Live Hosts Responded:
 
+| IP Address | Meaning | 
+|---|------|
+| 192.168.56.1 | VirtualBox / Host-only adapter gateway |
+| 192.168.56.100 | Most likely your Kali machine | 
+| 192.168.56.102 | Metasploitable 2 target machine |
 
+TTL values also help inference:
+ - TTL 64 → Linux-based systems
+ - TTL 255 → VirtualBox host or network device
+
+## Interprtation 
+
+- ✔ The ICMP sweep successfully identified the active machines in the lab network.
+- ✔ The Metasploitable 2 machine is confirmed alive at: 192.168.56.102
+- ✔ We can now proceed to Phase 4 – Port Scanning (Nmap).
+
+---
+
+## 📌 Step 3 Summary – Network Discovery
+
+| Tool | Purpose | Result |
+|---|------|------| 
+| netdiscover | ARP-based host detection | 1 host detected on alternate network (10.x.x.x) |
+| ICMP Sweep | Ping sweep of 192.168.56.0/24 | Found host, Kali box, and gateway |
+| Final Target Confirmed | - | Metasploitable 2 → 192.168.56.102 |
+
+---
+
+## ✅ Overall Interpretation
+
+The network discovery phase successfully mapped the environment.
+
+We now have:
+- Live host list
+- Confirmed IP of the target
+- Confirmation the lab network is functioning correctly
