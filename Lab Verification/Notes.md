@@ -120,6 +120,17 @@ This helps verify whether the target device is detectable on the local subnet.
 
 ##  Summary – Phase 1 Lab Verification
 
+| Check | Tool Used | Result | Status |
+|---|------|------|--------|
+| IP Address Verification | ip a | Host-Only IP 192.168.56.1 is active | ✓ Correct |
+| Route Table Validation | ip route | 192.168.56.0/24 routed via vboxnet0 | ✓ Correct |
+| ARP Table Check | arp -a | Only gateway visible; target will appear later | ⚠ Expected |
 
+---
+
+## Final Conclusion
+- ✔ Kali Linux is correctly configured for the penetration testing environment.
+- ✔ Host-Only network is functioning correctly.
+- ✔ The system is ready for Step 2 – Active Reconnaissance.
 
 
