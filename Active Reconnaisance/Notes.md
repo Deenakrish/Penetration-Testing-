@@ -47,3 +47,17 @@ This is safer and faster than a full scan.
 
 ## 📌 Step 4 Summary – Host Discovery
 
+| Check | Result | 
+|---|------|
+| Host Alive? | yes |
+| IP Confirmed | 192.168.56.102 | 
+| MAC vendor | VirtualboxNIC | 
+| Network Latency | very low(vmlocal)
+
+---
+
+## ✅ Overall Interpretation
+
+The ping scan confirms the Metasploitable target is up, active, and ready for deeper scanning.
+
+---
