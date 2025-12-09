@@ -46,3 +46,14 @@ This confirms the network setup before running any scans.
        valid_lft forever preferred_lft forever
     inet6 fe80::800:27ff:fe00:0/64 scope link proto kernel_ll 
        valid_lft forever preferred_lft forever
+
+## Findings
+- Kali's Host-Only Adapter (vboxnet0) is using IP: 192.168.56.1/24
+- This confirms that Metasploitable 2 should fall within the same subnet: 192.168.56.0/24
+- Wireless interface (wlan0) is unrelated to the lab network.
+
+## Interpretation
+- ✔ Kali Linux is correctly connected to a VirtualBox Host-Only network.
+- ✔ Metasploitable will also receive an IP from the same 192.168.56.x range.
+
+
