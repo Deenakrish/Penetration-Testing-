@@ -128,12 +128,10 @@ At the end of Reconnaissance, you now know:
 # 🚀 Next Phase
 After completing Reconnaissance, move to:
 
-# **Phase 2 – Vulnerability Mapping / Port & Service Scanning**
+# **Phase 2 – Vulnerability Scanning & Enumeration**
 (Nmap port scan → version scan → script scan → enumeration)
 
 ---
-
-If you want, I can also prepare a **README for Phase 2 – Scanning**, **Phase 3 – Enumeration**, or combine all phases into a full report format.
 
 # Scanning & Enumeration Phase
 
