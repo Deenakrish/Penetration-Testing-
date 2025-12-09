@@ -48,12 +48,78 @@ This confirms the network setup before running any scans.
        valid_lft forever preferred_lft forever
 
 ## Findings
-- Kali's Host-Only Adapter (vboxnet0) is using IP: 192.168.56.1/24
-- This confirms that Metasploitable 2 should fall within the same subnet: 192.168.56.0/24
-- Wireless interface (wlan0) is unrelated to the lab network.
+- Kali’s Host-Only network interface (vboxnet0) is assigned 192.168.56.1/24
+- This confirms the lab network: 192.168.56.0/24
+- Metasploitable will also receive an IP in the same network
+- Wireless interface (wlan0) is not part of the lab setup
 
 ## Interpretation
-- ✔ Kali Linux is correctly connected to a VirtualBox Host-Only network.
-- ✔ Metasploitable will also receive an IP from the same 192.168.56.x range.
+- ✔ Kali is properly connected to the Host-Only network.
+- ✔ Ready to detect and communicate with Metasploitable.
+
+---
+
+## 2. Route Table Verification – Using ip route
+
+### **Why This Tool Is Used**
+ip route verifies:
+- How network traffic is routed
+- Whether the Host-Only network is recognized
+- If the correct adapter is used for Metasploitable communication
+
+---
+
+### **Command**
+    ip route
+
+## Output
+    default via 10.66.221.98 dev wlan0 proto dhcp src 10.66.221.19 metric 600 
+    10.66.221.0/24 dev wlan0 proto kernel scope link src 10.66.221.19 metric 600 
+    192.168.56.0/24 dev vboxnet0 proto kernel scope link src 192.168.56.1 
+
+## Findings
+- The 192.168.56.0/24 network is routed through vboxnet0
+- Internet traffic goes through wlan0
+- No routing conflicts are detected
+
+## Interpretation
+- ✔ All packets intended for Metasploitable will travel through the correct interface.
+- ✔ Lab network routing is configured correctly.
+
+---
+
+## 3. ARP Table Verification – Using arp -a
+
+### **Why This Tool Is Used**
+arp -a is used to:
+- Check Layer 2 network visibility
+- See if any hosts in the local network responded
+- Confirm MAC-to-IP resolution
+
+This helps verify whether the target device is detectable on the local subnet.
+
+---
+
+### **Command**
+    arp -a
+
+## Output
+    _gateway (10.66.221.98) at 42:8f:fd:84:ed:c9 [ether] on wlan0
+
+## Findings
+- Only gateway entry exists
+- No Host-Only network entries yet (expected)
+- Metasploitable will appear once we ping or scan it
+
+## Interpretation
+- ✔ ARP table is fresh and clean
+- ✔ Kali has not yet interacted with Metasploitable
+- ✔ ARP entries will populate automatically during scanning
+
+---
+
+##  Summary – Phase 1 Lab Verification
+
+
 
 
