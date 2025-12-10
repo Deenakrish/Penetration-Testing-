@@ -11,6 +11,7 @@ This directly supports vulnerability assessment by pointing to version-specific 
 
 ### **Why This Tool Is Used**
 The -O (OS detection) scan attempts to determine the operating system, kernel version, and device type running on the target machine.
+
 This scan helps identify:
  - Validate that the target is Metasploitable 2 (Linux 2.6.x) 
  - Determine kernel-level vulnerabilities
@@ -83,6 +84,7 @@ It is essential for planning OS-based exploitation.
 ### **Why This Tool Is Used**
 The -sV option identifies service versions running on each open port.
 This is critical because exploitation requires version-specific vulnerabilities..
+
 This scan helps identify:
  - Identify vulnerable services (vsftpd 2.3.4, UnrealIRCd, ProFTPD, etc.)
  - Confirm software stacks (Apache 2.2.8, MySQL 5.0.51, Tomcat/Coyote)
