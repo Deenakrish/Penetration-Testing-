@@ -1,6 +1,6 @@
 
-# Phase 2 – Passive Reconnaissance  
-## 2.1 WHOIS & DNS Enumeration
+# Step 2 – Passive Reconnaissance  
+## WHOIS & DNS Enumeration
 
 Passive reconnaissance helps gather information **without directly interacting with the target system**.  
 Even though Metasploitable 2 is a **local machine**, WHOIS & DNS checks are still documented to show reconnaissance methodology.
