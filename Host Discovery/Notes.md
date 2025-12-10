@@ -1,6 +1,6 @@
 
-# Phase 3 – Semi-Passive Recon
-## 3.1 ARP Scanning & Live Host Discovery
+# Step 3 – Semi-Passive Recon
+## ARP Scanning & Live Host Discovery
 
 Network discovery helps identify **active hosts** inside the local subnet before any detailed scanning begins.  
 This phase uses **ARP-based** and **ICMP-based** host detection.
