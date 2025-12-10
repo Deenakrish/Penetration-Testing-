@@ -1,9 +1,9 @@
 
 # Step 3–Basic Enumeration
 
-Service detection and OS fingerprinting help identify what software, which versions, and which operating system are running on the target.
+Enumeration is performed to extract detailed information from discovered services, such as versions, users, shares, and configurations. 
 
-This directly supports vulnerability assessment by pointing to version-specific security issues.
+It helps identify potential attack vectors by revealing how each service operates and where weaknesses may exist.
 
 ---
 
