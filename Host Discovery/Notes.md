@@ -7,8 +7,10 @@ This phase uses **ARP-based** and **ICMP-based** host detection.
 
 ---
 
-# 🛠 Tool 1: `netdiscover`
-### **Purpose**
+## 3.1  netdiscover – Using `netdiscover`
+
+### **Why This Tool Is Used**
+The `netdiscover` command is used to check:
 - Passive & active ARP scanning  
 - Quickly enumerate live hosts on the LAN  
 - Detect devices even if they block ICMP/ping  
@@ -42,8 +44,10 @@ _____________________________________________________________________________
 
 ---
 
-# 🛠 Tool 2: Bash ICMP Sweep
-### **Purpose**
+## 3.2  Bash ICMP Sweep – Using `ICMP Sweep`
+
+### **Why This Tool Is Used**
+The `ICMP Sweep` command is used to check:
 - Identify live hosts inside a specific subnet
 - Quick and effective for internal lab networks
 - Helps verify the presence of Metasploitable 2 and other VMs
