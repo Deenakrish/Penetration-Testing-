@@ -1,6 +1,6 @@
 
-# Phase 4 – Active Reconnaissance  
-## 4.1 Host Discovery Using Nmap (Ping Scan)
+# Step 4 – Active Reconnaissance  
+## Host Discovery Using Nmap (Ping Scan)
 
 Host discovery ensures that the target system is **alive and reachable** before performing deeper scans.  
 A ping scan (`-sn`) checks host availability without scanning ports.  
@@ -8,8 +8,10 @@ This is safer and faster than a full scan.
 
 ---
 
-# 🛠 Tool: Nmap Ping Scan (`-sn`)
-### **Purpose**
+## 4.1  Nmap Ping Scan(-sn) – Using `Nmap`
+
+### **Why This Tool Is Used**
+The `nmap -sn` command is used to check:
 - Verify whether the target host is **up and responding**
 - Perform a **non-intrusive** host check  
 - Avoid scanning ports at this stage  
