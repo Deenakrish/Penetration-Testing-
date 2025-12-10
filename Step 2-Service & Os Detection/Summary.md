@@ -1,7 +1,9 @@
 
-# Step 2– port Scanning
+# Step 2– Service & OS Detection
 
-  Port scanning is a core part of the scanning phase and helps identify all live services, communication endpoints, and potential entry points on the target system.
+Service detection and OS fingerprinting help identify what software, which versions, and which operating system are running on the target.
+
+This directly supports vulnerability assessment by pointing to version-specific security issues.
 
 ---
 
@@ -149,3 +151,5 @@ Other key notes
 - Several services map directly to Metasploit modules, ensuring a straightforward exploitation phase.
 - The presence of the bindshell (1524/tcp) already gives direct root access—this is an intentional training vulnerability.
 - All detected services contribute to a wide attack surface, making the next phase (Vulnerability Assessment) rich in findings.
+
+---
