@@ -1,5 +1,5 @@
 
-# Step 1 – port Scanning
+# Step 1 – Port Scanning
 
   Port scanning is a core part of the scanning phase and helps identify all live services, communication endpoints, and potential entry points on the target system.
 
