@@ -7,8 +7,10 @@ Even though Metasploitable 2 is a **local machine**, WHOIS & DNS checks are stil
 
 ---
 
-## 🛠 Tool 1: `whois`  
-### **Purpose**
+## 2.1  WHOIS Lookup – Using `Whois`
+
+### **Why This Tool Is Used**
+The `Whois` command is used to check:
 - Identify IP ownership  
 - Check whether the target is public or private  
 - Understand allocated IP ranges  
@@ -41,8 +43,10 @@ Since Metasploitable 2 uses a **private IP (192.168.x.x)**, WHOIS reveals IANA p
 
 ---
 
-## 🛠 Tool 2: nslookup 
-### **Purpose**
+## 2.2 DNS Lookup – Using `nslookup`
+
+### **Why This Tool Is Used**
+The `nslookup` command is used to check: 
 - Query DNS records
 - Check whether the target has any hostname associated
 
@@ -64,8 +68,10 @@ Since Metasploitable 2 uses a **private IP (192.168.x.x)**, WHOIS reveals IANA p
 
 ---
 
-## 🛠 Tool 3: dig -x (Reverse DNS Lookup)
-### **Purpose**
+## 2.3 Reverse DNS Lookup – Using `dig -x`
+
+### **Why This Tool Is Used**
+The `dig -x` command is used to check: 
 - Verify DNS reverse lookup
 - Check if any DNS server inside the network has mappings
 
@@ -88,6 +94,8 @@ Since Metasploitable 2 uses a **private IP (192.168.x.x)**, WHOIS reveals IANA p
 - ✔ Typical for private lab targets.
 
 ---
+
+## 2.4 Public OSINT Research
 
 ## 📌 Metasploitable 2 – Default Services Overview
 
