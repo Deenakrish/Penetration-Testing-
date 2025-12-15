@@ -1,4 +1,4 @@
-# Exploitation Phase – vsftpd 2.3.4 Backdoor
+# Exploitation Phase – 1. vsftpd 2.3.4 Backdoor
 
 ---
 
@@ -95,13 +95,13 @@ This confirms complete system compromise.
   - Disable security mechanisms
 
 ## Risk Assessment
-
-
-
-
-
-
-
+| Fctor | Severity |
+|---|------|
+| Authentication Bypass | Critical | 
+| Remote Code Execution | Critical | 
+| Privilege Level | Root | 
+| Exploit Complexity | Low |
+| Impact | Full system compromise |
 ## Remediation Recommendations
 - Immediately upgrade vsftpd to a secure version (≥ 3.x)
 - Verify package integrity using trusted repositories
@@ -114,4 +114,5 @@ This confirms complete system compromise.
 The vsftpd 2.3.4 backdoor vulnerability allows unauthenticated attackers to gain root-level access with minimal effort.
 
 Successful exploitation demonstrates how outdated and compromised services can result in complete host takeover, emphasizing the importance of patch management and service hardening.
+
 ---
