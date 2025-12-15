@@ -6,8 +6,11 @@
 
 **Phase:** Exploitation  
 **Vulnerability Identified During:** Scanning & Vulnerability Assessment  
+
 **Affected Service:** PostgreSQL
+
 **Service Version:** 8.3.1
+
 **Port:** TCP 5432 
 
 This vulnerability was identified during service enumeration and confirmed during vulnerability assessment using Nmap and Metasploit auxiliary modules.
