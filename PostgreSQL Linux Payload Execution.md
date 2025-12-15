@@ -1,4 +1,4 @@
- Exploitation Phase – 3. PostgreSQL Linux Payload Execution
+Exploitation Phase – 3. PostgreSQL Linux Payload Execution
 
 ---
 
@@ -75,11 +75,40 @@ The module exploit/linux/postgres/postgres_payload allows Metasploit to connect 
 
 ## Post-Exploitation Validation
 Command Executed:
-- whoami
-- uname -a
-- ifconfig
-- pwd
-- ls
+
+    meterpreter > getuid
+
+Output:
+
+    Server username: postgres
+Confirms user-level access under PostgreSQL account..
+Command
+
+    meterpreter > sysinfo
+Output
+
+    Computer     : metasploitable.localdomain
+    OS           : Ubuntu 8.04 (Linux 2.6.24-16-server)
+    Architecture : i686
+    Meterpreter  : x86/linux
+
+Command
+
+    meterpreter > ipconfig
+Output
+
+    eth0: 192.168.56.102
+    lo: 127.0.0.1
+
+Command
+
+    meterpreter > pwd
+    meterpreter > ls
+Output
+
+    /var/lib/postgresql/8.3/main
+
+Output lists PostgreSQL data directories and configuration files.
 
 ## Database & Credential Verification
 - Database: postgres
