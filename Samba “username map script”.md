@@ -73,19 +73,30 @@ This allows full control over the target host without prior authentication if th
 
 ## Post-Exploitation Validation
 Command Executed:
-- whoami
-- uname -a
-- ifconfig
-- pwd
-- ls
 
-## Findings
-- User: root
-- Kernel: Linux 2.6.24-16-server
-- Full filesystem access
-- Network configuration exposed
-- Ability to read/write system files
-This confirms complete system compromise.
+    whoami
+Output:
+
+    root
+Confirms root-level access.
+Command
+
+    hostname
+Output
+
+    metasploitable 
+Command
+
+    df -h
+
+Output
+
+    Filesystem            Size  Used Avail Use% Mounted on
+    /dev/mapper/metasploitable-root  7.0G  1.5G  5.2G  22% /
+    /var/run               1014M  144K 1014M   1% /var/run
+    /var/lock              1014M     0 1014M   0% /var/lock
+    /dev/shm               1014M     0 1014M   0% /dev/shm
+    /dev/sda1              228M   25M  192M  12% /boot
 
 ## What Was Achieved Through This Exploit
 - Root shell access obtained
