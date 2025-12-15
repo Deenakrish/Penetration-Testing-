@@ -46,7 +46,6 @@ The Metasploit module `unreal_ircd_3281_backdoor` connects to the IRC daemon and
 
 - **Module Name:** `exploit/unix/irc/unreal_ircd_3281_backdoor`
 - **Exploit Type:** `Remote Command Execution`
-- **Exploit Module:**'exploit/unix/irc/unreal_ircd_3281_backdoor'
 - **Default Service Port:** 6667
 - **Execution Content:** Root
 ---
@@ -117,7 +116,7 @@ Output shows UnrealIRCd configuration and runtime files.
   - Exfiltrate sensitive data
 
 ## Risk Assessment
-| Fctor | Severity |
+| Factor | Severity |
 |---|------|
 | Authentication Required | None | 
 | Remote Code Execution | Critical | 
